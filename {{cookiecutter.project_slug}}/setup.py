@@ -8,9 +8,7 @@ from setuptools import find_packages, setup
 with open("README.md") as readme_file:
     readme = readme_file.read()
 
-setup_requirements = [
-    "pytest-runner>=5.2",
-]
+requirements = []
 
 test_requirements = [
     "black>=19.10b0",
@@ -23,7 +21,6 @@ test_requirements = [
 ]
 
 dev_requirements = [
-    *setup_requirements,
     *test_requirements,
     "bumpversion>=0.6.0",
     "coverage>=5.1",
@@ -37,10 +34,7 @@ dev_requirements = [
     "wheel>=0.34.2",
 ]
 
-requirements = []
-
 extra_requirements = {
-    "setup": setup_requirements,
     "test": test_requirements,
     "dev": dev_requirements,
     "all": [
@@ -83,7 +77,6 @@ setup(
     name="{{ cookiecutter.project_slug }}",
     packages=find_packages(exclude=["tests", "*.tests", "*.tests.*"]),
     python_requires=">=3.7",
-    setup_requires=setup_requirements,
     test_suite="{{ cookiecutter.project_slug }}/tests",
     tests_require=test_requirements,
     extras_require=extra_requirements,
