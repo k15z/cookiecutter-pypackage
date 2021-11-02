@@ -53,6 +53,7 @@ fix-lint:  ## automatically fix lint and format
 	black {{cookiecutter.project_slug}} tests
 
 test:  ## run type check and tests
+	flake8 {{cookiecutter.project_slug}}
 	mypy {{cookiecutter.project_slug}}
 	pytest
 

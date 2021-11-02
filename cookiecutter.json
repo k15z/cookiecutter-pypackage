@@ -1,11 +1,11 @@
 {
   "full_name": "Kevin Alex Zhang",
-  "email": "kevz@mit.edu",
+  "email": "hello@kevz.dev",
   "github_username": "k15z",
   "project_name": "Python Boilerplate",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
-  "pypi_username": "{{ cookiecutter.github_username }}",
+  "pypi_username": "kevz",
   "version": "0.0.0",
   "open_source_license": [
     "Proprietary",
